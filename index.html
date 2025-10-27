@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Disaster Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style for the large SOS buttons */
+        .sos-button {
+            padding: 20px 40px; /* Larger padding for bigger buttons */
+            font-size: 20px; /* Larger font size */
+            border: none;
+            cursor: pointer;
+            margin: 10px; /* Space between buttons */
+            border-radius: 5px;
+        }
+
+        /* Red SOS button */
+        .sos-button-red {
+            background-color: red;
+            color: white;
+        }
+
+        /* Green SOS button */
+        .sos-button-green {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-image: url('dd.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; margin: 0;">
+    <header>
+        <h1>Disaster Information Aggregation</h1>
+    </header>
+    <nav>
+        <button onclick="navigateTo('calamity1.html')">Floods</button>
+        <button onclick="navigateTo('calamity2.html')">Earthquakes</button>
+        <button onclick="navigateTo('calamity3.html')">Hurricanes</button>
+        <button onclick="navigateTo('calamity4.html')">Tsunamis</button>
+        <button onclick="navigateTo('calamity5.html')">Wildfires</button>
+        <button onclick="navigateTo('calamity6.html')">Volcanoes</button>
+    </nav>
+    <main>
+        <h2>Welcome to Real-time Disaster Information</h2>
+        <p>Stay updated on current disasters. Click on a calamity to view more details and send an SOS if needed.</p>
+
+        <!-- Two large SOS buttons added here -->
+        <button id="sosButtonRed" class="sos-button sos-button-red" onclick="sendSOS('Red')">Send Red SOS</button>
+        <button id="sosButtonGreen" class="sos-button sos-button-green" onclick="sendSOS('Green')">Send Green SOS</button>
+    </main>
+    <script>
+        function sendSOS(type) {
+            alert(type + " SOS request sent! Help is on the way.");
+        }
+
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

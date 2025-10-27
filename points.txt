@@ -1,0 +1,29 @@
+This Disaster Management system is created for people in Emergency situation can contact all the nearest help station at once with much ease. 
+
+1. This is a disaster management system so no requirement of any kind of login.
+
+2. Can also be used by old people and can keep them out of the trouble of dialing.
+
+3. It takes the location of the person and delivers it to the nearest help station.
+
+4. There is no reqirement of reverse connection and if required can be developed [in case 
+   police wants to deliver message to people in need]
+
+5. It takes the SOS signal and the nearest station can identify from the large number of 
+   counts and also the locations from where the signals are emitted.
+
+6. Index page refers to the page which is referred by the people & SOS page is only visible 
+   to the help station members.  
+
+7. If connection to database is required then it is only used to record and store the data 
+   which is created while a disaster for reference in the future. 
+
+8. If only one instance occurs then can be refered as by mistake by an infant.
+
+9. This is a prototype and has a high chance of developement.
+
+
+
+
+
+Note for demonstrators : Allow the location for "only this time" for demonstration as in the video.

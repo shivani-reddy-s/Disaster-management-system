@@ -1,0 +1,18 @@
+<body style="background-image: url('your-background-image.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; margin: 0;">
+    <header>
+        <h1>Disaster Information Aggregation</h1>
+    </header>
+    <nav>
+        <button onclick="navigateTo('calamity1.html')">Floods</button>
+        <button onclick="navigateTo('calamity2.html')">Earthquakes</button>
+        <button onclick="navigateTo('calamity3.html')">Hurricanes</button>
+        <button onclick="navigateTo('calamity4.html')">Tsunamis</button>
+        <button onclick="navigateTo('calamity5.html')">Wildfires</button>
+        <button onclick="navigateTo('calamity6.html')">Volcanoes</button>
+    </nav>
+    <main>
+        <h2>Welcome to Real-time Disaster Information</h2>
+        <p>Stay updated on current disasters. Click on a calamity to view more details and send an SOS if needed.</p>
+    </main>
+    <script src="script.js"></script>
+</body>

@@ -1,0 +1,122 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Navigation button styling */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+/* Main content styling */
+main {
+    text-align: center;
+    margin: 20px;
+}
+
+main h2 {
+    color: #444;
+}
+
+main p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* SOS Button styling */
+button {
+    padding: 12px 25px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+/* Styling for the SOS Count Page */
+#sosCountDisplay {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#sosCountDisplay h2 {
+    font-size: 24px;
+    color: #444;
+}
+
+#sosCountDisplay ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#sosCountDisplay ul li {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Reset button on the SOS page */
+nav button.reset-button {
+    background-color: #e60000;
+}
+
+nav button.reset-button:hover {
+    background-color: #cc0000;
+}
+
+/* Responsive layout for mobile screens */
+@media (max-width: 768px) {
+    nav button {
+        padding: 10px 15px;
+        font-size: 14px;
+        margin: 5px 3px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    #sosCountDisplay ul li {
+        font-size: 18px;
+    }
+}

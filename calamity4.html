@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsunami Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('tsunami.jfif'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; margin: 0;">
+    <header>
+        <h1>Tsunami Information</h1>
+    </header>
+    <nav>
+        <button onclick="navigateTo('index.html')">Home</button>
+    </nav>
+    <main>
+        <h2>Current Tsunamis Information</h2>
+        <div id="tsunamiData">
+            <p>Fetching real-time tsunami data...</p>
+        </div>
+        <p>Helpline: 123-456-7890</p>
+        <button onclick="sendSOS('Tsunamis')">SOS - Send Help</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

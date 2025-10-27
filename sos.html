@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Count Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SOS Button Press Count</h1>
+    </header>
+    <nav>
+        <button onclick="resetSOSCount()">Reset SOS Counts</button>
+    </nav>
+    <main>
+        <p>Click the button below to view how many times the SOS buttons have been pressed for each disaster and their locations.</p>
+        <button onclick="displaySOSCount()">View SOS Count</button>
+    </main>
+    <div id="sosCountDisplay" style="display:none;">
+        <h2>SOS Count for Each Disaster</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Disaster</th>
+                    <th>Count</th>
+                    <th>Locations</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Floods</td>
+                    <td><span id="floodCount">0</span></td>
+                    <td><span id="floodLocations"></span></td>
+                </tr>
+                <tr>
+                    <td>Earthquakes</td>
+                    <td><span id="earthquakeCount">0</span></td>
+                    <td><span id="earthquakeLocations"></span></td>
+                </tr>
+                <tr>
+                    <td>Hurricanes</td>
+                    <td><span id="hurricaneCount">0</span></td>
+                    <td><span id="hurricaneLocations"></span></td>
+                </tr>
+                <tr>
+                    <td>Tsunamis</td>
+                    <td><span id="tsunamiCount">0</span></td>
+                    <td><span id="tsunamiLocations"></span></td>
+                </tr>
+                <tr>
+                    <td>Wildfires</td>
+                    <td><span id="wildfireCount">0</span></td>
+                    <td><span id="wildfireLocations"></span></td>
+                </tr>
+                <tr>
+                    <td>Volcanoes</td>
+                    <td><span id="volcanoCount">0</span></td>
+                    <td><span id="volcanoLocations"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
